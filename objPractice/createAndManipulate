@@ -1,0 +1,35 @@
+/*Goal: Create an object person with properties firstName, lastName, age, and hobbies (array).
+Requirements: Build the object, write a function getFullName(person) that returns "First Last", and addHobby(person, hobby) that pushes a hobby.
+Example: Input: person = {firstName: 'Ada', lastName:'Lovelace', age: 28, hobbies: ['math']}; getFullName(person) → 'Ada Lovelace'; after addHobby(person, 'programming') -> person.hobbies includes 'programming'.
+Hint: Use dot notation and Array.prototype.push.
+Extension: Add validation in addHobby to avoid duplicate hobbies.
+Challenge 2 — Nested Objects and Property Access*/
+
+const person = {
+    firstName: "Randy",
+    lastName: "Luvuere",
+    age: 17,
+    hobbies: ["Video Games", "Reading", "Scripting"]
+}
+const addHobby = (person, hobby) => {
+    for(let i = 0; i < person.hobbies.length; i++){
+        if(person.hobbies[i] === hobby){
+            return "This person already has this Hobby"
+        }else{
+            let result = person.hobbies.push(hobby)
+            
+        }
+    }
+    console.log(result)
+}
+const removeHobby = (person, hobby) => {
+    for(let i = 0; i < person.hobbies.length; i++){
+        if(person.hobbies[i] === hobby){
+            let result = person.hobbies.unshift(hobby)
+        }else{
+            return "This person does not have this Hobby"
+        }
+    }
+    console.log(person.hobbies)
+}
+removeHobby(person, "Scripting")
