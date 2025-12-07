@@ -3,6 +3,7 @@ function deepSum(value){
     if(typeof value === 'number'){
         return sum += value
     }
+//Checks for Arrays
     if(Array.isArray(value)){
         return value.reduce((s, value) => s + deepSum(value)) 
     }
