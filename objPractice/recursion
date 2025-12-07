@@ -1,0 +1,10 @@
+function deepSum(value){
+    let sum = 0
+    if(typeof value === 'number'){
+        return sum += value
+    }
+    if(Array.isArray(value)){
+        return value.reduce((s, value) => s + deepSum(value)) 
+    }
+}
+deepSum(5)

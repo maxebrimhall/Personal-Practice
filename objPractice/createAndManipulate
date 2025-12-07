@@ -5,31 +5,20 @@ Hint: Use dot notation and Array.prototype.push.
 Extension: Add validation in addHobby to avoid duplicate hobbies.
 Challenge 2 — Nested Objects and Property Access*/
 
-const person = {
+let person = {
     firstName: "Randy",
     lastName: "Luvuere",
     age: 17,
     hobbies: ["Video Games", "Reading", "Scripting"]
 }
-const addHobby = (person, hobby) => {
-    for(let i = 0; i < person.hobbies.length; i++){
-        if(person.hobbies[i] === hobby){
-            return "This person already has this Hobby"
-        }else{
-            let result = person.hobbies.push(hobby)
-            
-        }
+let addHobby = (person, hobby) => {
+    if(person.hobbies.includes(hobby)){
+        return person.hobbies
     }
-    console.log(result)
+    person.hobbies.push(hobby)
 }
-const removeHobby = (person, hobby) => {
-    for(let i = 0; i < person.hobbies.length; i++){
-        if(person.hobbies[i] === hobby){
-            let result = person.hobbies.unshift(hobby)
-        }else{
-            return "This person does not have this Hobby"
-        }
-    }
-    console.log(person.hobbies)
+let removeHobby = (person, hobby) => {
+   console.log(person)
+   return person
 }
-removeHobby(person, "Scripting")
+addHobby(person, "Beekeeping")
