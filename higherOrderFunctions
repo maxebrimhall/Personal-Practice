@@ -1,6 +1,8 @@
+// Creates new array
 function newArray(array, fn){
     
 }
+// Iterates through old array and pushes to new array
 function recreate(array){
 
 }
