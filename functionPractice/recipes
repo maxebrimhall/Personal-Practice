@@ -1,4 +1,4 @@
-// Write a recipe book that includes 3 recipes. These recipes should reference eachother.
+// This is a recipe
 function makePastaDough(flourCups, eggs){
     return `Mix ${flourCups} cups of flower with ${eggs} eggs slowly.`
 }
