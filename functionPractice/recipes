@@ -1,0 +1,13 @@
+// Write a recipe book that includes 3 recipes. These recipes should reference eachother.
+function makePastaDough(flourCups, eggs){
+    return `Mix ${flourCups} cups of flower with ${eggs} eggs slowly.`
+}
+function makeTomatoSauce(tomatoAmount, garlicCloves){
+    return `Take ${tomatoAmount} tomatoes and mash them. When you are done mashing, mix in ${garlicCloves} garlic cloves.`
+}
+function makePasta(flourCups, eggs, tomatoAmount, garlicCloves){
+    let pastaDough = makePastaDough(flourCups, eggs)
+    let tomatoSauce = makeTomatoSauce(tomatoAmount, garlicCloves)
+    return `Pasta made from: ${pastaDough} Topped with ${tomatoSauce}`
+}
+makePasta()
