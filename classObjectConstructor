@@ -1,0 +1,8 @@
+let book = {
+    title: "Fun Times",
+    author: "ME",
+    pages: "156",
+    summary(){
+        return `${this.title} is about me and having fun`
+    }
+}
