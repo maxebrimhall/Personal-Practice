@@ -1,8 +1,20 @@
-let book = {
-    title: "Fun Times",
-    author: "ME",
-    pages: "156",
-    summary(){
-        return `${this.title} is about me and having fun`
+class book{
+    constructor(title, author, pages){
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+    }
+    getInfo(){
+        return `${this.title} is a book by ${this.author} and has ${this.pages} pages`;
+    }
+    static comparePages(a,b){
+        if(a.pages > b.pages){
+            return a
+        }else{
+            return b
+        }
     }
 }
+
+let fun = new book("Fun Days", "Max Leward", 158)
+let bad = new book("Bad Days", "Loewerd Rage", 15)
