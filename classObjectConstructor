@@ -18,3 +18,26 @@ class book{
 
 let fun = new book("Fun Days", "Max Leward", 158)
 let bad = new book("Bad Days", "Loewerd Rage", 15)
+
+class library {
+    constructor(name){
+        this.name = name
+        this.array = []
+    }
+        addBook(book){
+            this.array.push(book)
+        }
+        removeBook(title){
+            for(let i = 0; i < array.length; i++){
+                if(title === this.array[i]){
+                    this.array.shift();
+                    return this.array
+                }
+            }
+        }
+        findByAuthor(author){
+            for(let i = 0; i < array.length; i++){
+
+            }
+        }
+    }
