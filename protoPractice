@@ -1,0 +1,17 @@
+function Car(make){
+    this.make = make
+}
+    Car.prototype.info = function() {
+        console.log(`Make: ${this.make}`)
+    }
+
+    const p = new Car('Toyota')
+
+    function Shoe(brand){
+        this.brand = brand
+    }
+    Shoe.prototype.info = function() {
+        console.log(`Brand: ${brand}`)
+    }
+
+    const l = new Shoe('Nike')
