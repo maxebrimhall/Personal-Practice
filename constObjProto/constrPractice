@@ -1,0 +1,19 @@
+// B-1 Practice 
+function Point(x,y) {
+    this.x = x
+    this.y = y
+}
+Point.prototype.distance = function () {
+    return Math.sqrt(this.x**2 + this.y**2)
+}
+
+// B-2 Practice
+function Counter(start) {
+    this.start = start
+}
+function increment() {
+    this.start += 1
+}
+function value(){
+    return this.start
+}
