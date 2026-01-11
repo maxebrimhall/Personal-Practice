@@ -1,3 +1,4 @@
+
 // B-1 Practice 
 function Point(x,y) {
     this.x = x
