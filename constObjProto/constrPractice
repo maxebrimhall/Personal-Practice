@@ -1,4 +1,3 @@
-
 // B-1 Practice 
 function Point(x,y) {
     this.x = x
@@ -18,3 +17,11 @@ function increment() {
 function value(){
     return this.start
 }
+//B-3 Practice
+function Person(name){
+    this.name=name
+}
+Person.prototype.greet = function(otherName) {
+    return `Hi ${otherName}, I'm ${this.name}`
+}
+//L-1 Practice
