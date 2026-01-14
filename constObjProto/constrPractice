@@ -24,4 +24,3 @@ function Person(name){
 Person.prototype.greet = function(otherName) {
     return `Hi ${otherName}, I'm ${this.name}`
 }
-//L-1 Practice
