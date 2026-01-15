@@ -24,3 +24,21 @@ function Person(name){
 Person.prototype.greet = function(otherName) {
     return `Hi ${otherName}, I'm ${this.name}`
 }
+
+// l-1 practice
+function Rectangle(x,y) {
+    this.x = x
+    this.y = y
+}
+Rectangle.prototype.area = function() {
+    return this.x * this.y
+}
+Rectangle.prototype.scale = function(factor) {
+    return (this.x *= factor) * (this.y *= factor)
+}
+
+// l-2 practice
+function Inherits(sub,supper) {
+    this.sub = sub
+    this.super = supper
+}
