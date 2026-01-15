@@ -37,7 +37,7 @@ Rectangle.prototype.scale = function(factor) {
     return (this.x *= factor) * (this.y *= factor)
 }
 
-// l-2 practice
+// l-2 practic
 function Inherits(sub,supper) {
     this.sub = sub
     this.super = supper
