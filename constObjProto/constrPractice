@@ -42,3 +42,12 @@ function Inherits(sub,supper) {
     this.sub = sub
     this.super = supper
 }
+
+//l-3 practice
+function Animal(name) {
+    this.name = name
+}
+Animal.prototype.speak = function() {
+    return `${this.name} bark`
+}
+
