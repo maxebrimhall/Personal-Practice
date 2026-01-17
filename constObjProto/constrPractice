@@ -52,3 +52,22 @@ Animal.prototype.speak = function() {
     return `${this.name} bark`
 }
 
+//A-1 Practice
+function Widget(options) {
+    this.options = options
+}
+Widget.prototype.object = function() {
+    return this.options
+}
+
+//Intermediate Prototype practice 
+//Task 1
+function Gadget(name) {
+    this.name = name
+}
+const a = new Gadget('A')
+const b = new Gadget('B')
+Gadget.prototype.describe = function() {
+    return `Gadget: ${this.name}`
+}
+//Task 2
