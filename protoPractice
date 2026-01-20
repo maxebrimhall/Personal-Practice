@@ -15,3 +15,12 @@ function Car(make){
     }
 
     const l = new Shoe('Nike')
+
+    function Phone(brand){
+        this.brand = brand
+    }
+    Phone.prototype.info = function() {
+        `Brand: ${this.brand}`
+    }
+     
+    const d = new Phone('iPhone')
