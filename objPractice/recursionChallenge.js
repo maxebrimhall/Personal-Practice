@@ -24,4 +24,19 @@ function power(base,exponent){
     }else{
         return base * power(base, exponent-1)
     }
-} 
+}
+
+// Another Basic Challenge on Recursion:
+// Write a recursive function called 'sumToN' that takes a single parameter n (a positive integer).
+// The function should return the sum of all integers from 1 to n.
+// For example, sumToN(5) should return 15 (1+2+3+4+5), and sumToN(1) should return 1.
+// Base case: when n is 1, return 1.
+
+// Your solution here: 
+function sumToN(positive){
+    if(positive === 1){
+        return 1
+    }else{
+        return positive + sumToN(positive-1)
+    }
+}
