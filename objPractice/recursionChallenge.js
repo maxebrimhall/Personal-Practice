@@ -40,3 +40,30 @@ function sumToN(positive){
         return positive + sumToN(positive-1)
     }
 }
+
+// Third Basic Challenge on Recursion:
+// Write a recursive function called 'fibonacci' that takes a single parameter n (a non-negative integer).
+// The function should return the nth Fibonacci number, where fibonacci(0) = 0, fibonacci(1) = 1, and fibonacci(n) = fibonacci(n-1) + fibonacci(n-2) for n > 1.
+// For example, fibonacci(5) should return 5, and fibonacci(0) should return 0.
+// Base cases: n = 0 or n = 1.
+
+// Your solution here:
+
+// Fourth Basic Challenge on Recursion:
+// Write a recursive function called 'countDown' that takes a single parameter n (a positive integer).
+// The function should print the numbers from n down to 1, each on a new line.
+// For example, countDown(3) should print:
+// 3
+// 2
+// 1
+// Base case: when n is 1, print 1.
+
+// Your solution here:
+
+// Fifth Basic Challenge on Recursion:
+// Write a recursive function called 'reverseString' that takes a single parameter str (a string).
+// The function should return the string reversed.
+// For example, reverseString("hello") should return "olleh", and reverseString("a") should return "a".
+// Base case: if the string length is 0 or 1, return the string itself.
+
+// Your solution here:
