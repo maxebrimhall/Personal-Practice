@@ -48,7 +48,15 @@ function sumToN(positive){
 // Base cases: n = 0 or n = 1.
 
 // Your solution here:
-
+function fibonacci(nonNegative){
+    if(nonNegative === 0){
+        return 0
+    }else if(nonNegative === 1){
+        return 1
+    }else{
+        return fibonacci(nonNegative - 1) + fibonacci(nonNegative - 2) 
+    }
+}
 // Fourth Basic Challenge on Recursion:
 // Write a recursive function called 'countDown' that takes a single parameter n (a positive integer).
 // The function should print the numbers from n down to 1, each on a new line.
@@ -59,7 +67,14 @@ function sumToN(positive){
 // Base case: when n is 1, print 1.
 
 // Your solution here:
-
+function countDown(n){
+    if(n ==1){
+        console.log(1)
+    }else{
+        console.log(n)
+        countDown(n - 1)
+    }
+}
 // Fifth Basic Challenge on Recursion:
 // Write a recursive function called 'reverseString' that takes a single parameter str (a string).
 // The function should return the string reversed.
@@ -67,3 +82,12 @@ function sumToN(positive){
 // Base case: if the string length is 0 or 1, return the string itself.
 
 // Your solution here:
+function reverseString(str){
+    let arr = []
+    if(str.length() === 0 || str.length() === 1){
+        return str
+    }else{
+        arr.push(str)
+        console.log(arr)
+    }
+}
